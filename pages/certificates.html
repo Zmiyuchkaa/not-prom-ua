@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../styles/style_certificates.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="cf_container">
+    <div class="cf_top">
+      <h1 class="cf_top_h1">Just buy</h1>
+      <p class="cf_top_p">here</p>
+    </div>
+
+    <form class="cf_certificate_custom">
+      <div class="cf_certificate_container">
+        <h2 class="cf_certificate_custom_h2">Fill in the information below and click "Add to Cart"</h2>
+        <div class="cf_cert_sum">
+          <label class="cf_certificate_label" for="#sum">Enter an Amount: $</label>
+          <input class="cf_cert_sum_input" id="sum" type="text">
+        </div>
+
+        <div class="cf_cert_recipient">
+          <h3 class="cf_cert_h3">Enter "To" and "From" as you'd like them to appear on the e-Gift
+            Certificate. <span class="cf_cert_span">(optional)</span></h3>
+          <label class="cf_cert_recipient_label cf_cert_recipient_label_pad" for="">To:</label>
+          <input class="cf_cert_recipient_input" type="text"><br>
+          <label class="cf_cert_recipient_label" for="">From:</label>
+          <input class="cf_cert_recipient_input" type="text">
+        </div>
+
+        <div class="cf_cert_message">
+          <h3 class="cf_cert_h3">Would you like to include a message for the recipient? <span class="cf_cert_span">(optional)</span></h3>
+          <select class="cf_message_select" id="select" name="message_select" onchange="document.getElementById('textarea').value=value">
+            <option class="cf_option" value="">-Select of of the popular messages-</option>
+            <option class="cf_option" value="Happy birthday!">Happy birthday!</option>
+            <option class="cf_option" value="Best wishes!">Best wishes!</option>
+            <option class="cf_option" value="Congratulations!">Congratulations!</option>
+            <option class="cf_option" value="Thinking of you!">Thinking of you!</option>
+            <option class="cf_option" value="Happy holidays!">Happy holidays!</option>
+            <option class="cf_option" value="Merry Christmas!">Merry Christmas!</option>
+          </select>
+
+          <h3 class="cf_cert_h3">Message:</h3>
+          <textarea class="cf_message" id="textarea" name="message_text" placeholder="Type here..." cols="34" rows="7"></textarea>
+        </div>
+        <input class="cf_button_buy" type="submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
