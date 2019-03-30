@@ -1,0 +1,123 @@
+/*atom live server*/
+
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.pr_main__iteminfo {
+  background-color: #f2f2f2;
+}
+
+.pr_container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.iteminfo__backtobtn_arrow {
+  width: 15px;
+  margin-right: 10px;
+  margin-bottom: -2px;
+}
+
+.iteminfo__backtobtn {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.iteminfo__backtobtn:hover{
+  color: #94b649;
+}
+
+.pr_product {
+  margin-top: 10px;
+  height: 400px;
+  position: relative;
+}
+
+.pr_product__itemphoto {
+  background-color: white;
+  text-align: center;
+  width: 40%;
+  max-height: 350px;
+  float: left;
+  margin-right: 30px;
+}
+
+.pr_product__img {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.pr__product__prodname {
+  font-size: 28px;
+  margin-bottom: 0;
+  color: #292d34;
+}
+
+.pr_prodname__category {
+  color: #8c8d8e;
+  margin: 0;
+  cursor: pointer;
+}
+
+.pr_prodname__category:hover{
+text-decoration: underline;
+color: #94b649;
+}
+
+.pr_pdoduct__description__title {
+  color: #94b649;
+}
+
+.pr_pdoduct__description__text {
+  color: #292d34;
+  font-size: 14px;
+}
+
+.pr_price {
+  position: absolute;
+  bottom: 40px;
+  left: 43%;
+  font-size: 58px;
+  color:  #94b649;
+  margin-bottom: 0;
+}
+
+.pr_buybtn {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  bottom: 55px;
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #94b649;
+  border: 0px;
+  color: white;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.pr_quantity {
+  position: absolute;
+  right: 230px;
+  bottom: 40px;
+  color: grey;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.pr_reviews__list {
+  list-style: none;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+}
+
+hr{
+  color: lightgrey;
+}
