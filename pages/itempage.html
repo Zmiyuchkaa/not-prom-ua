@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/pr__style.css">
+    <link rel="stylesheet" href="../style/index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title></title>
   </head>
   <body>
+
+    <div class="container">
+
+      <header class="hat">
+        <a href="sample.html"><img class="cart" src="../images/shopping-cart.svg" alt="Shopping Cart"></a>
+        <div class="hat-header">
+          <img class="logo" src="../images/logo.jpg" alt="Logo">
+        </div>
+        <p class="shop-name">My Shop<br>organics</p>
+        <nav class="navigation">
+          <a class="navigation_link" href="#">Catalogue</a>
+          <a class="navigation_link" href="#">Stock</a>
+          <a class="navigation_link" href="#">Add item</a>
+          <a class="navigation_link" href="#">Lottery</a>
+          <a class="navigation_link" href="#">Sertificates</a>
+          <a class="navigation_link" href="#">Technical Support</a>
+          <a class="navigation_link" href="#">Contacts</a>
+        </nav>
+      </header>
+    </div>
+
     <main class="pr_main">
       <div class="pr_main__iteminfo">
         <div class="pr_container">
@@ -18,14 +41,14 @@
             <img class="pr_product__img"src="../images/laphr.jpg" alt="laphroaig">
           </div>
           <h2 class="pr__product__prodname">Laphroaig Scotch Whiskey 10</h2>
-          <small class="pr_prodname__category"><em>Alcohol Drinks</em></small>
+          <small class="pr_prodname__category">Alcohol Drinks</small>
           <h3 class="pr_pdoduct__description__title">Description</h3>
-          <p class="pr_pdoduct__description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="pr_pdoduct__description__text">Renowned for being the world's richest single malt Scotch, Laphroaig's award-winning family of whiskies consists of a selection of Core, Travel Retail and Rare expressions. Each the end result of a spirit matured in a range of different woods and casks, and the product of a 200 year old tradition of unique whisky making.</p>
 
-          <p class="pr_quantity">In stock:666</p>
+          <p class="pr_quantity">37</p>
           <p class="pr_price">$57.33</p>
 
-          <button class="pr_buybtn"type="button" name="button">Buy</button>
+          <button class="pr_buybtn pr_btn"type="button" name="button">Add to bag</button>
 
         </div>
 
@@ -37,29 +60,39 @@
           <h2 class="pr_reviews__title">Reviews</h2>
           <ul class="pr_reviews__list">
             <li class="pr_reviews__list__items">
+              <img class="pr_items__username_img"src="../images/pr_user.png" alt="user">
               <p class="pr_items__username">Alco_lover</p>
               <p class="pr_items__date">12.03.2019 <em>17:57</em></p> <hr>
               <p class="pr__items__text">Голова не болела</p>
             </li>
             <li class="pr_reviews__list__items">
-              <p class="pr_items__username">Alco_lover</p>
+              <img class="pr_items__username_img"src="../images/pr_user.png" alt="user">
+              <p class="pr_items__username">John</p>
               <p class="pr_items__date">12.03.2019 <em>17:57</em></p> <hr>
               <p class="pr__items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </li>
             <li class="pr_reviews__list__items">
-              <p class="pr_items__username">Alco_lover</p>
+              <img class="pr_items__username_img"src="../images/pr_user.png" alt="user">
+              <p class="pr_items__username">Victor</p>
               <p class="pr_items__date">12.03.2019 <em>17:57</em></p> <hr>
-              <p class="pr__items__text">Голова не болела</p>
+              <p class="pr__items__text">Голова не болела. Ну, может, немножко. Но, я уверен, что причина не в качестве алкоголя, а, скорее, в его чрезмерном количестве. Очень важно написать комментарий не такой маленький как первый, но и поменьше, чем второй. Так красивее.</p>
             </li>
           </ul>
-
-          <div class="pr_reviews__window">
-            <h2 class="pr_reviews__window__title">Left a comment</h2>
-            <textarea class="pr_textarea__user" name="textarea" rows="8" cols="80"></textarea>
-            <textarea class="pr_textarea__text" name="textarea" rows="8" cols="80"></textarea>
-
-          </div>
         </div>
+
+      <div class="pr_reviews__windowblock">
+        <div class="pr_container">
+            <div class="pr_reviews__window">
+              <h2 class="pr_reviews__window__title">Leave a comment</h2>
+              <p class="pr_reviews__window__yourinfo">Your name:</p>
+              <textarea class="pr_textarea__user" name="textarea" rows="8" cols="80"></textarea>
+              <p class="pr_reviews__window__yourinfo">Your comment:</p>
+              <textarea class="pr_textarea__text" name="textarea" rows="8" cols="80"></textarea>
+            </div>
+
+            <button class="pr__commentbtn pr_btn"type="button" name="button">Comment</button>
+        </div>
+      </div>
 
       </div>
 
