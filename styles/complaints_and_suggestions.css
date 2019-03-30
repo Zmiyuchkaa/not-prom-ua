@@ -1,0 +1,72 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+body {
+    height: 100vh;
+    background-color: #cccccc;
+    
+}
+
+.cs_menu{
+    box-sizing: border-box ;
+    margin: 0 auto ;
+    width: 80% ;
+    display: flex ;
+    background-color: white;
+    padding-bottom: 40px ;
+    
+}
+
+.cs_text{
+    text-align: center ;
+    box-sizing: border-box ;
+    margin: 0 auto ;
+    width: 50% ; 
+    padding: 0 40px ;   
+}
+
+.cs_text_title{
+    margin-top: 20px ;
+}
+
+.cs_text_content{
+    text-align: left ; 
+    margin-top: 20px ;   
+}
+
+.form{
+    margin-top: 20px ;
+}
+.cs_form{
+    box-sizing: border-box ;
+    margin-top: 25px ;
+    width: 50% ;
+}
+
+.form_width{
+    width: 70% ;
+    outline: none ;
+    border-radius: 20px ;
+    height: 30px ;
+    border: transparent ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    padding-left: 10px ;
+}
+
+.cs_form_comment{    
+    border-radius: 6px ;
+    height: 120px ;
+}
+
+.cs_form_buton{
+    padding-left: 250px ;
+    width: 100px ;
+}
+
+.cs_form_buton_send{
+    margin-top: 5px ;
+    width: 100% ;        
+}
+
