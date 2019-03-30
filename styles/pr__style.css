@@ -118,6 +118,40 @@ color: #94b649;
   padding: 0;
 }
 
+.pr_items__username::before {
+  content: 'User:';
+  color: #94b649;
+  margin-right: 5px;
+}
+
+.pr_items__username {
+  float: left;
+  font-size: 12px;
+  color: grey;
+}
+
+.pr_items__date {
+  float: right;
+  color: grey;
+  font-size: 12px;
+}
+
+.pr__items__text {
+  font-size: 14px;
+}
+
 hr{
+  clear: both;
   color: lightgrey;
+}
+
+.pr_textarea__user {
+  display: block;
+  width: 20%;
+  height: 20px;
+  margin-bottom: 15px;
+}
+.pr_textarea__text {
+  width: 50%;
+  border-radius: 2px;
 }
