@@ -7,9 +7,57 @@
     <link rel="stylesheet" href="../styles/shopping-cart.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="shortcut icon" href="../images/favicon.png">
-    <title></title>
+    <title>My Shop</title>
   </head>
   <body>
+
+    <section class="sc_shopping-cart__container">
+      <div class="sc_shopping-cart">
+
+        <table class="sc_shopping-cart__items">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Sum</th>
+          </tr>
+
+          <tr class="sc_shopping-cart__item">
+            <td class="sc_shopping-cart__item__delete sc_shopping-cart__item-data">
+              <a class="sc_shopping-cart__item__delete__button" href="#"><img
+                src="../images/cancel-button.svg"
+                class="sc_shopping-cart__item__delete__button__img"
+                alt="Delete button"></a>
+            </td>
+            <td class="sc_shopping-cart__item__photo sc_shopping-cart__item-data">
+              <a href="#"><img
+                src="../images/old-phone.jpg"
+                class="sc_shopping-cart__item__photo__img"
+                alt="Old phone picture"></a>
+            </td>
+            <td class="sc_shopping-cart__item__description sc_shopping-cart__item-data">
+              <div class="sc_shopping-cart__item__description__name">
+                <a href="#" class="sc_shopping-cart__item__description__name__link">
+                Old-school phone</a>
+              </div>
+              <div class="sc_shopping-cart__item__description__price">
+                1200 UAH
+              </div>
+            </td>
+            <td class="sc_shopping-cart__item__quantity sc_shopping-cart__item-data"></td>
+            <td class="sc_shopping-cart__item__sum sc_shopping-cart__item-data"></td>
+          </tr>
+        </table>
+        <div class="sc_shopping-cart__total">
+
+        </div>
+        <div class="sc_shopping-cart__order">
+
+        </div>
+
+      </div>
+    </section>
 
   </body>
 </html>
