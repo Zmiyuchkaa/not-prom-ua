@@ -27,6 +27,10 @@
 
 }
 
+.sc_shopping-cart__top-right-sum {
+  color: rgba(129, 129, 129);
+}
+
 .sc_shopping-cart__item {
   height: 110px;
 
@@ -80,19 +84,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  /* align-self: stretch; */
 
 }
 
 .sc_shopping-cart__item__description__name {
-
+  text-overflow: ellipsis;
 }
 
 .sc_shopping-cart__item__description__name__link {
+  text-decoration: none;
+  color: #000000;
+}
 
+.sc_shopping-cart__item__description__name__link:hover {
+  text-decoration: underline;
+  text-decoration-color: #BDCB96;
 }
 
 .sc_shopping-cart__item__description__price {
-
+  align-self: flex-end;
+  font-style: italic;
 
 }
 
