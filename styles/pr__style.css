@@ -4,14 +4,16 @@ body{
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  color: #2b2c26;
 }
 
 .pr_main__iteminfo {
-  background-color: #f2f2f2;
+  background-color: #f8fdf2;
+  margin-top: 13px;
 }
 
 .pr_container {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -62,6 +64,7 @@ body{
   color: #8c8d8e;
   margin: 0;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .pr_prodname__category:hover{
@@ -79,6 +82,7 @@ color: #94b649;
 }
 
 .pr_price {
+  clear: both;
   position: absolute;
   bottom: 40px;
   left: 43%;
@@ -90,25 +94,22 @@ color: #94b649;
 .pr_buybtn {
   cursor: pointer;
   position: absolute;
-  right: 15px;
+  right: 0px;
   bottom: 55px;
-  width: 200px;
   height: 40px;
-  border-radius: 2px;
-  background-color: #94b649;
-  border: 0px;
-  color: white;
-  font-size: 32px;
-  font-weight: 100;
+  font-size: 18px;
 }
 
 .pr_quantity {
-  position: absolute;
-  right: 230px;
-  bottom: 40px;
-  color: grey;
+  float: right;
+  color: #2b2c26;
   font-size: 12px;
   font-weight: 100;
+  margin-top: 70px;
+}
+
+.pr_quantity::before {
+  content: 'In stock: '
 }
 
 .pr_reviews__list {
@@ -118,6 +119,90 @@ color: #94b649;
   padding: 0;
 }
 
+.pr_items__username::before {
+  content: 'User:';
+  color: #94b649;
+  margin-right: 5px;
+}
+
+.pr_items__username {
+  float: left;
+  font-size: 12px;
+  color: grey;
+}
+
+.pr_items__username_img {
+width: 15px;
+float: left;
+margin-top: 11px;
+margin-right: 5px;
+}
+
+.pr_items__date {
+  float: right;
+  color: grey;
+  font-size: 12px;
+}
+
+.pr__items__text {
+  font-size: 14px;
+}
+
 hr{
-  color: lightgrey;
+  clear: both;
+  color: #f2f2f2;
+}
+
+.pr_reviews__windowblock {
+  background-color: #f8fdf2;
+  margin-top: 30px;
+}
+
+.pr_reviews__window__title {
+  margin-top: 20px;
+}
+
+.pr_reviews__window__yourinfo {
+  font-size: 12px;
+  color: grey;
+}
+
+.pr_textarea__user {
+  display: block;
+  width: 20%;
+  height: 20px;
+  margin-bottom: 15px;
+  border: 0px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+}
+.pr_textarea__text {
+  width: 50%;
+  border-radius: 2px;
+  border: 0px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+}
+
+.pr__commentbtn {
+  height: 30px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.pr_btn {
+  width: 200px;
+  font-weight: 400;
+  border: 0px;
+  border-radius: 2px;
+  color: #004a2b;
+  background-color: #94b649;
+  text-transform: uppercase;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pr_btn:hover {
+  background-color: #2b2c26;
+  color: white;
 }
