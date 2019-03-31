@@ -3,6 +3,7 @@
   margin: auto;
   border: 2px solid #ffffff;
   box-shadow: 2px 2px 8px #cccccc;
+  overflow-x: scroll;
 }
 
 .sc_hat {
@@ -63,6 +64,7 @@
 }
 
 .sc_shopping-cart__heading {
+  margin-top: 30px;
   text-align: center;
   color: #4100AA;
   font-family: 'Raleway', sans-serif;
@@ -123,11 +125,12 @@
 }
 
 .sc_shopping-cart__item__description {
-  min-width: 180px;
+  max-width: 180px;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex: auto;
 
 }
 
