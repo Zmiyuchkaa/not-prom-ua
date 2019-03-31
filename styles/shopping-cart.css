@@ -188,6 +188,7 @@
   box-shadow: 1px 1px 1px #cccccc;
   margin: 5px;
   vertical-align: middle;
+  outline: none;
 }
 
 .item-qty-button:hover {
@@ -226,6 +227,10 @@
   font-size: 36px;
   color: #BDCB96;
   margin-left: 5px;
+}
+
+.sc_shopping-cart__total__field__currency {
+  display: inline-block;
 }
 
 .sc_shopping-cart__order {
