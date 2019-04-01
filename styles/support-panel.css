@@ -12,8 +12,9 @@ body {
 	position: relative;
 }
 .sp-ticket-logo {
-	height: 90%;
+	height: 75%;
 	margin-left: 15px;
+	margin-top: 5px;
 }
 
 .sp-search {
@@ -34,13 +35,24 @@ body {
 	border-radius: 5px; 
 	border: none;
 	height: 25px;
+	/*можно сделать отдельным классом */
+	text-align: center;
 }
 
+.sp-search-field:focus {
+	border: 2px solid #dd6b4d;
+	outline: none;
+}
 .sp-search-button {
 	/*можно сделать отдельным классом */
 	border-radius: 5px;
 	border: none;
 	height: 25px;
+	/*можно сделать отдельным классом */
+	background-color: #dd6b4d;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .sp-container {
@@ -55,10 +67,16 @@ body {
 .sp-ticket {
 	margin: 20px 15px;
 	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 
+							0 1px 3px 1px rgba(60,64,67,.16);
 	box-sizing: border-box;
 	padding: 16px;
 	overflow: hidden;
+}
+
+.sp-ticket:hover {
+	box-shadow: 0 1px 1px 0 rgba(221,107,77,.08), 
+							0 1px 3px 1px rgba(221,107,77,.70);
 }
 
 .ticket-info-container {
@@ -89,3 +107,4 @@ footer {
 	bottom: 0px;
 	width: 100%;
 }
+
