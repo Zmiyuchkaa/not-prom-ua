@@ -47,12 +47,13 @@
               <th class="sc_shopping-cart__top-right-sum">Sum</th>
             </tr>
 
-            <tr class="sc_shopping-cart__item">
+            <tr class="sc_shopping-cart__item" id="item1">
               <td class="sc_shopping-cart__item__delete sc_shopping-cart__item-data">
                 <a class="sc_shopping-cart__item__delete__button" href="#"><img
                   src="../images/cancel-button.svg"
                   class="sc_shopping-cart__item__delete__button__img"
-                  alt="Delete button"></a>
+                  alt="Delete button"
+                  onclick="delItem1()"></a>
               </td>
               <td class="sc_shopping-cart__item__photo sc_shopping-cart__item-data">
                 <a href="#"><img
@@ -71,7 +72,7 @@
               </td>
               <td class="sc_shopping-cart__item__quantity sc_shopping-cart__item-data">
                 <button class="item-qty-button" type="button" name="subtract button" onclick="subQ1()">-</button>
-                <input type="number" name="quantity" value="1" min="1" class="sc_shopping-cart__item__quantity__field" id="qty1">
+                <input disabled type="number" name="quantity" value="1" class="sc_shopping-cart__item__quantity__field" id="qty1">
                 <button class="item-qty-button" type="button" name="add button" onclick="addQ1()">+</button>
               </td>
               <td class="sc_shopping-cart__item__sum sc_shopping-cart__item-data">
@@ -86,12 +87,13 @@
               </td>
             </tr>
 
-            <tr class="sc_shopping-cart__item">
+            <tr class="sc_shopping-cart__item" id="item2">
               <td class="sc_shopping-cart__item__delete sc_shopping-cart__item-data">
                 <a class="sc_shopping-cart__item__delete__button" href="#"><img
                   src="../images/cancel-button.svg"
                   class="sc_shopping-cart__item__delete__button__img"
-                  alt="Delete button"></a>
+                  alt="Delete button"
+                  onclick="delItem2()"></a>
               </td>
               <td class="sc_shopping-cart__item__photo sc_shopping-cart__item-data">
                 <a href="#"><img
@@ -110,7 +112,7 @@
               </td>
               <td class="sc_shopping-cart__item__quantity sc_shopping-cart__item-data">
                 <button class="item-qty-button" type="button" name="subtract button" onclick="subQ2()">-</button>
-                <input type="number" name="quantity" value="1" min="1" class="sc_shopping-cart__item__quantity__field" id="qty2">
+                <input disabled type="number" name="quantity" value="1" class="sc_shopping-cart__item__quantity__field" id="qty2">
                 <button class="item-qty-button" type="button" name="add button" onclick="addQ2()">+</button>
               </td>
               <td class="sc_shopping-cart__item__sum sc_shopping-cart__item-data">

@@ -250,7 +250,15 @@
   color: #FEFEFE;
 }
 
+.sc_order-button:focus {
+  outline: none;
+}
+
 .sc_footer-section {
   margin: 0;
   width: 100%;
+}
+
+.sc_deleted {
+  display: none;
 }
