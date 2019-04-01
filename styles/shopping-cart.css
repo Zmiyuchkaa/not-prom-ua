@@ -31,16 +31,19 @@
   right: 20px;
   top: 80px;
   box-shadow: 1px 2px 8px #cccccc;
+  width: 30px;
+  height: 30px;
 }
 
 .sc_header__cart:hover {
   transform: scale(1.1);
 }
 
-.sc_cart {
+.cart {
   padding: 0;
   float: none;
   vertical-align: middle;
+  background-color: unset;
 }
 
 .cart:hover {
