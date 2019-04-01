@@ -199,6 +199,7 @@ hr{
   color: #004a2b;
   background-color: #94b649;
   text-transform: uppercase;
+  cursor: pointer;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
