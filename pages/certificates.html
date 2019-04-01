@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../styles/style_certificates.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins:400,600,800" rel=" stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+  <div class="container cf_index_container">
+    <header class="hat cf_index_hat">
+
+      <div class="hat-header">
+        <img class="logo" src="../images/logo.jpg" alt="Logo">
+      </div>
+      <p class="shop-name cf_index_shope_name">My Shop<br>organics</p>
+      <nav class="navigation cf_index_navigation">
+        <a class="navigation_link" href="#">Catalogue</a>
+        <a class="navigation_link" href="#">Stock</a>
+        <a class="navigation_link" href="#">Add item</a>
+        <a class="navigation_link" href="#">Lottery</a>
+        <a class="navigation_link" href="certificates.html">Certificates</a>
+        <a class="navigation_link" href="complainsts_and_suggestions.html">Feedbacks</a>
+        <a class="navigation_link" href="#">Contacts</a>
+        <a href="pages/shopping-cart.html"><img class="cart" src="../images/shop.png" alt="Shopping Cart"></a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="cf_container">
+    <div class="cf_top">
+      <h1 class="cf_top_h1">Just buy</h1>
+      <p class="cf_top_p">here</p>
+    </div>
+
+    <form class="cf_certificate_custom">
+      <div class="cf_certificate_container">
+        <h2 class="cf_certificate_custom_h2">Fill in the information below and click "Add to Cart"</h2>
+        <div class="cf_cert_sum">
+          <label class="cf_certificate_label" for="#sum">Enter an Amount: $</label>
+          <input class="cf_cert_sum_input" id="sum" type="text">
+        </div>
+
+        <div class="cf_cert_recipient">
+          <h3 class="cf_cert_h3">Enter "To" and "From" as you'd like them to appear on the e-Gift
+            Certificate. <span class="cf_cert_span">(optional)</span></h3>
+          <label class="cf_cert_recipient_label cf_cert_recipient_label_pad" for="">To:</label>
+          <input class="cf_cert_recipient_input" type="text"><br>
+          <label class="cf_cert_recipient_label" for="">From:</label>
+          <input class="cf_cert_recipient_input" type="text">
+        </div>
+
+        <div class="cf_cert_message">
+          <h3 class="cf_cert_h3">Would you like to include a message for the recipient? <span class="cf_cert_span">(optional)</span></h3>
+          <select class="cf_message_select" id="select" name="message_select" onchange="document.getElementById('textarea').value=value">
+            <option class="cf_option" value="">-Select of of the popular messages-</option>
+            <option class="cf_option" value="Happy birthday!">Happy birthday!</option>
+            <option class="cf_option" value="Best wishes!">Best wishes!</option>
+            <option class="cf_option" value="Congratulations!">Congratulations!</option>
+            <option class="cf_option" value="Thinking of you!">Thinking of you!</option>
+            <option class="cf_option" value="Happy holidays!">Happy holidays!</option>
+            <option class="cf_option" value="Merry Christmas!">Merry Christmas!</option>
+          </select>
+
+          <h3 class="cf_cert_h3">Message:</h3>
+          <textarea class="cf_message" id="textarea" name="message_text" placeholder="Type here..." cols="34" rows="7"></textarea>
+        </div>
+        <input class="cf_button_buy" type="submit">
+      </div>
+    </form>
+
+    <footer class="footer-section cf_footer_section">
+      <div class="footer-section_title">ABOUT US</div>
+      <div class="footer-section_about">
+        <p>This website and all intellectual property located on it belong to
+          their respective owners and are protected by the legislation on
+          intellectual property of Ukraine, as well as relevant international
+          conventions and agreements. Any use of the results of intellectual
+          activity posted on the site (visual design, text, graphics,
+          illustrations, photos, videos, programs, music, marks for goods and
+          services, etc.) without the written permission of the copyright
+          holders is illegal and may serve as a basis for legal proceedings.
+          and bringing the offender to civil and criminal liability in
+          accordance with the current legislation of Ukraine.</p>
+      </div>
+
+      <div class='social cf_social'>
+        <ul class="social-item">
+          <li><a href="https://www.youtube.com/user/JonnaJinton" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://twitter.com/vkozulya" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="https://www.instagram.com/zmiyuchkaa/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/rolskaolena?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section_about cf_footer-section_about">
+        <ul>
+          <li>2019 Copyright Ob.ua</li><br>
+          <li>All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
