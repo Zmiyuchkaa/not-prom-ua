@@ -27,6 +27,8 @@
 .cf_container {
   width: 64.5%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cf_index_shope_name {
@@ -35,7 +37,7 @@
 }
 
 .cf_top {
-  widows: 70%;
+  width: 100%;
   height: 300px;
   margin-top: 30px;
   display: flex;
@@ -68,7 +70,7 @@
   background-color: white;
 }
 
-.cf_certificate_container {
+.cf_certificate_custom_container {
   padding: 20px;
 }
 
@@ -99,7 +101,6 @@
   padding-left: 5px;
   padding-right: 5px;
   box-shadow: 0px 0px 3px 0px rgba(148, 182, 73, 1);
-  /* border-radius: 5px; */
 }
 
 .cf_cert_recipient {
@@ -194,6 +195,105 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 3px 0px rgba(148, 182, 73, 1);
   color: #2B2C26;
+}
+
+.cf_certificate {
+  width: 50%;
+  margin-top: 30px;
+  background-color: rgba(148, 182, 73, 0.2);
+}
+
+.cf_certificate_container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cf_certificate_style {
+  width: 100%;
+  height: 200px;
+  border-radius: 0px 30px 0px 30px;
+  margin-bottom: 40px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 3px solid #efefef;
+  display: flex;
+}
+
+.cf_cert_value {
+  width: 40%;
+  height: 100%;
+  background-color: #2B2C26;
+  border-bottom-left-radius: 30px;
+}
+
+.cf_certificate_style:nth-of-type(2) .cf_cert_value_s {
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+.cf_cert_value h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cf_cert_value h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.cf_cert_info {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  justify-content: space-between;
+  border-top-right-radius: 30px;
+}
+
+.cf_cert_info h2 {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #94b649;
+  text-align: center;
+}
+
+.cf_contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 10px;
+}
+
+.cf_cert_info_item {
+  display: block;
+  margin: 0 10px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #2B2C26;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cf_contact_item {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+  font-weight: normal;
+  color: #ffa300;
+}
+
+.cf_certificate_style:first-of-type {
+  margin-top: 20px;
 }
 
 .cf_footer_section {
