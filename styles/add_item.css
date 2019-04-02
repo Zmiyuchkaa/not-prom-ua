@@ -1,0 +1,253 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: rgb(252, 255, 245);
+}
+h1{
+  color: #94b649;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+label{
+  padding-right: 40px;
+  margin-left: 40px
+}
+.demo_forms {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: content-box;
+  border: 2px solid #2f2f2a;
+  border-radius: 4px;
+  text-align: justify;
+  padding-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-group  {
+  text-align: center;
+  padding-top: 40px;
+
+}
+
+.btn-group button {
+  color: white;
+  background-color: red;
+  width: 100px;
+  height: 60px;
+}
+
+.form_item{
+  margin: 20px;
+}
+.placeholder{
+  align-items: flex-end;
+}
+
+
+.container {
+  text-align: center;
+  margin: 0 50px 0 50px;
+}
+
+.hat {
+  width: 70%;
+  height: 200px;
+  background-color: white;
+  display: inline-block;
+}
+
+.cart {
+    width: 30px ;
+    background-color: white ;
+}
+
+.cart:hover{
+    background-color: #BDCB96 ;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  clear: right;
+  padding-top: 10px;
+}
+
+.shop-name {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  text-shadow: 2px 2px 0 #BDCB96;
+  color: black;
+  text-align: center;
+}
+
+.navigation {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #2B2C26;
+}
+
+.navigation_link {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  margin-right:3%;
+}
+
+.navigation a:last-child .navigation a:first-child {
+  margin-left: 6%;
+}
+
+
+.main-page {
+  width: 70%;
+  height: 600px;
+  display: inline-block;
+  padding-top: 10%;
+  padding-bottom: 9px;
+}
+
+.main-page_special {
+  border: 1px solid #e5e6e8;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+.main-page_special_text {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.main-page_secret-buyer {
+  border: 1px solid #e5e6e8;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-top: 10%;
+}
+
+.main-page_secret-buyer_text {
+  font-size: 25px;
+  margin-right: 40px;
+  line-height: 2;
+}
+
+a.button {
+  font-weight: 700;
+  color: #2b2c26;
+  text-decoration: none;
+  padding: 0.8em 3em calc(.8em + 3px);
+  border-radius: 40px;
+  background: rgb(189, 203, 150);
+  box-shadow: 0 -3px rgb(124, 134, 97) inset;
+  transition: 0.2s;
+}
+
+a.button:last-child {
+  margin-right: 40px;
+}
+
+a.button:hover { background: rgb(53, 167, 110); }
+a.button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.main-page_image {
+  width: 250px;
+  height: 200px;
+  right: 20px;
+  padding-top: 30px;
+  float: right;
+  padding-right: 40px;
+}
+
+.main-page_secret-buyer_image {
+  width: 300px;
+  height: 200px;
+  margin-top: 3.5%;
+  float: left;
+  padding-left: 1%;
+  margin-bottom: 3.5%;
+  margin-right: 40px;
+}
+
+.main-page_secret-buyer_section {
+  float: right;
+  width: 50%;
+}
+
+.footer-section {
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: #2B2C26;
+  text-align: center;
+}
+
+.footer-section_title {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: lighter;
+  color: white;
+}
+
+.social {
+  text-align: center;
+  height: 180px;
+  width: 40%;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+.social a {
+  text-align: center;
+  float: left;
+  margin: 0px 30px 30px 0px;
+  padding-bottom: 6px;
+}
+
+.social a i {
+  font-size: 32px;
+  color: white;
+  width: 30px;
+}
+
+.footer-section_about {
+  width: 400px;
+  float: right;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.footer-section_about:nth-child(2) {
+  width: 80%;
+  float: left;
+  margin: 0px 70px 30px 70px;
+}
