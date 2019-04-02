@@ -1,7 +1,7 @@
-/**{
+*{
     margin: 0 ;
     padding: 0 ;
-}*/
+}
 
 body {
     height: 100vh;
@@ -123,11 +123,12 @@ body {
 }
 
 .cs_form_buton_send{
-    margin-top: 5px ;
+    margin-top: 10px ;
     width: 100% ; 
     border-radius: 10px ; 
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     outline: none ;
+    border: transparent ;
     background-color: #BDCB96 ;     
 }
 
