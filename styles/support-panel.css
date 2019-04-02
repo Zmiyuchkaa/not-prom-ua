@@ -1,0 +1,110 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.sp-container-heading {
+	text-align: center;
+}
+
+.sp-header {
+	height: 70px;
+	background-color: #183661;
+	position: relative;
+}
+.sp-ticket-logo {
+	height: 75%;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.sp-search {
+	position: absolute;
+	right: 80px;
+	top: 25px;
+}
+
+.sp-ticket-logout {
+	height: 35%;
+	position: absolute;
+	right: 30px;
+	top: 25px;
+}
+
+.sp-search-field {
+	/*можно сделать отдельным классом */
+	border-radius: 5px; 
+	border: none;
+	height: 25px;
+	/*можно сделать отдельным классом */
+	text-align: center;
+}
+
+.sp-search-field:focus {
+	border: 2px solid #dd6b4d;
+	outline: none;
+}
+.sp-search-button {
+	/*можно сделать отдельным классом */
+	border-radius: 5px;
+	border: none;
+	height: 25px;
+	/*можно сделать отдельным классом */
+	background-color: #dd6b4d;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sp-container {
+	background-color: #FEFEFE;
+	display: grid;
+	grid-template-columns: repeat(3 , 1fr);
+	max-width: 1140px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.sp-ticket {
+	margin: 20px 15px;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 
+							0 1px 3px 1px rgba(60,64,67,.16);
+	box-sizing: border-box;
+	padding: 16px;
+	overflow: hidden;
+}
+
+.sp-ticket:hover {
+	box-shadow: 0 1px 1px 0 rgba(221,107,77,.08), 
+							0 1px 3px 1px rgba(221,107,77,.70);
+}
+
+.ticket-info-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.sp-ticket-body {
+	height: 54px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	background: white;
+	overflow: hidden;
+}
+
+.sp-ticket-heading {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+footer {
+	height: 36px;
+	background: #183661;
+	bottom: 0px;
+	width: 100%;
+}
+

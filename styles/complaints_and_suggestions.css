@@ -1,13 +1,70 @@
-*{
+/**{
     margin: 0 ;
     padding: 0 ;
-}
+}*/
 
 body {
     height: 100vh;
-    background-color: #cccccc;    
+    background-color: #cccccc; 
+    font-family: 'Roboto', sans-serif;   
 }
 
+.hat {
+    box-sizing: border-box ;
+    margin: 20px auto ;
+    width: 1000px ;    
+    background-color: white;
+    padding-bottom: 40px ;
+    text-align: center ;       
+  }
+
+.logo {
+    width: 70px ;
+    margin-top: 20px ;        
+}
+
+.shop-name {    
+    font-weight: bold ;
+    text-transform: uppercase ;
+    letter-spacing: 1em;
+    text-shadow: 2px 2px 0 #BDCB96 ;
+    color: black ;    
+}
+
+.navigation {
+    width: 100% ;    
+    background-color: #2B2C26 ;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.navigation_link {
+    margin-bottom: 15px ;
+}
+
+.navigation a {
+    color: white ;
+    text-decoration: none ;
+    text-transform: uppercase ;
+    font-size: 14px ;
+    display: inline-block ;
+    margin-right: 30px ;
+} 
+
+.navigation a:hover{
+    color: #BDCB96 ;
+} 
+
+.cart {
+    width: 30px ; 
+    position: relative ; 
+    top: 8px ;
+    left: 90px ;     
+    background-color: white ;    
+}
+
+.cart:hover{
+    background-color: #BDCB96 ;
+}
 
 .cs_menu{
     box-sizing: border-box ;
@@ -62,14 +119,94 @@ body {
 .cs_form_buton{
     margin-left: 260px ;
     width: 100px ;
+    
 }
 
 .cs_form_buton_send{
     margin-top: 5px ;
-    width: 100% ;        
+    width: 100% ; 
+    border-radius: 10px ; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    outline: none ;
+    background-color: #BDCB96 ;     
 }
 
+.footer-section {
+    box-sizing: border-box ;
+    margin: 20px auto ;
+    width: 1000px ;        
+    padding-bottom: 40px ;
+    text-align: center ;
+    background-color: #2B2C26;
+  }
+  
+.footer-section_title {    
+    padding-top: 2%;
+    padding-bottom: 4%;    
+    color: white;
+}
+
+.footer-section_about {
+    width: 300px;
+    float:right;
+    color: white;
+    margin: 0;
+}
+  
+.social {
+    text-align: center;
+    height: 250px;
+    width: 10%;
+    display: block ;
+}
+  
+li {
+    list-style-type: none;    
+}
+  
+  
+.social a {
+    text-align: center;    
+}
+  
+.social a i {
+    font-size: 32px;
+    color: white;
+    width: 30px;
+}
+  
+.social a:hover {
+    background: radial-gradient(white, transparent);
+}
+
+.twitter a:hover {
+    background: #00acee; color: rgb(146, 28, 28);
+}
+
+.instagram a:hover {
+    background: #3f729b; color: #fff;
+}
+
+.facebook a:hover {
+    background: #3b5998; color: #fff;
+}
+  
+
+
 @media screen and (max-width: 750px){
+    .hat {
+        text-align: center ;
+    }
+
+    .navigation a {
+        margin-top: 20px ;
+        padding-top: 10px ;
+        display: block ;
+    } 
+    
+    .cart{
+        position: inherit ;
+    }
     .cs_menu{
         display: block ;
     }  

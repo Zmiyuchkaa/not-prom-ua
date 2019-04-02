@@ -3,61 +3,179 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/shopping-cart.css">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../styles/shopping-cart.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:400,400i" rel="stylesheet">
     <link rel="shortcut icon" href="../images/favicon.png">
     <title>My Shop</title>
   </head>
   <body>
+    <div class="sc_page-container">
+      <header class="hat sc_hat">
+        <a class="sc_header__cart" href="shopping-cart.html">
+          <img class="cart" src="../images/shopping-cart.svg" alt="Shopping Cart"></a>
+        <div class="hat-header">
+          <a href="../index.html">
+          <img class="logo" src="../images/logo.jpg" alt="Logo"></a>
+        </div>
+        <p class="shop-name">My Shop<br>organics</p>
+        <nav class="navigation">
+          <a class="navigation_link" href="items.html">Catalogue</a>
+          <a class="navigation_link" href="#">Stock</a>
+          <a class="navigation_link" href="certificates.html">Gift certificates</a>
+          <a class="navigation_link" href="support-panel.html">Support</a>
+          <a class="navigation_link" href="complainsts_and_suggestions">Feedbacks</a>
+          <a class="navigation_link" href="contact.html">Contacts</a>
+        </nav>
+      </header>
 
-    <section class="sc_shopping-cart__container">
-      <div class="sc_shopping-cart">
+      <section class="sc_shopping-cart__container">
+        <div class="sc_shopping-cart">
+          <div class="sc_shopping-cart__heading">
+            <h1>Your shopping cart</h1>
+          </div>
 
-        <table class="sc_shopping-cart__items">
-          <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th class="sc_shopping-cart__top-right-sum">Sum</th>
-          </tr>
+          <table class="sc_shopping-cart__items">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th class="sc_shopping-cart__top-right-sum">Sum</th>
+            </tr>
 
-          <tr class="sc_shopping-cart__item">
-            <td class="sc_shopping-cart__item__delete sc_shopping-cart__item-data">
-              <a class="sc_shopping-cart__item__delete__button" href="#"><img
-                src="../images/cancel-button.svg"
-                class="sc_shopping-cart__item__delete__button__img"
-                alt="Delete button"></a>
-            </td>
-            <td class="sc_shopping-cart__item__photo sc_shopping-cart__item-data">
-              <a href="#"><img
-                src="../images/old-phone.jpg"
-                class="sc_shopping-cart__item__photo__img"
-                alt="Old phone picture"></a>
-            </td>
-            <td class="sc_shopping-cart__item__description sc_shopping-cart__item-data">
-              <div class="sc_shopping-cart__item__description__name">
-                <a href="#" class="sc_shopping-cart__item__description__name__link">
-                Old-school phone</a>
-              </div>
-              <div class="sc_shopping-cart__item__description__price">
-                1200 UAH
-              </div>
-            </td>
-            <td class="sc_shopping-cart__item__quantity sc_shopping-cart__item-data"></td>
-            <td class="sc_shopping-cart__item__sum sc_shopping-cart__item-data"></td>
-          </tr>
-        </table>
-        <div class="sc_shopping-cart__total">
+            <tr class="sc_shopping-cart__item" id="item1">
+              <td class="sc_shopping-cart__item__delete sc_shopping-cart__item-data">
+                <a class="sc_shopping-cart__item__delete__button" href="#"><img
+                  src="../images/cancel-button.svg"
+                  class="sc_shopping-cart__item__delete__button__img"
+                  alt="Delete button"
+                  onclick="delItem1()"></a>
+              </td>
+              <td class="sc_shopping-cart__item__photo sc_shopping-cart__item-data">
+                <a href="#"><img
+                  src="../images/old-phone.jpg"
+                  class="sc_shopping-cart__item__photo__img"
+                  alt="Old phone picture"></a>
+              </td>
+              <td class="sc_shopping-cart__item__description sc_shopping-cart__item-data">
+                <div class="sc_shopping-cart__item__description__name">
+                  <a href="#" class="sc_shopping-cart__item__description__name__link">
+                  Old-school phone</a>
+                </div>
+                <div class="sc_shopping-cart__item__description__price">
+                  1200 UAH
+                </div>
+              </td>
+              <td class="sc_shopping-cart__item__quantity sc_shopping-cart__item-data">
+                <button class="item-qty-button" type="button" name="subtract button" onclick="subQ1()">-</button>
+                <input disabled type="number" name="quantity" value="1" class="sc_shopping-cart__item__quantity__field" id="qty1">
+                <button class="item-qty-button" type="button" name="add button" onclick="addQ1()">+</button>
+              </td>
+              <td class="sc_shopping-cart__item__sum sc_shopping-cart__item-data">
+                <div class="sc_shopping-cart__item__sum__field">
+                  <div id="sum1">
+
+                  </div>
+                  <div class="sc_shopping-cart__item__sum__field__currency">
+                    UAH
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="sc_shopping-cart__item" id="item2">
+              <td class="sc_shopping-cart__item__delete sc_shopping-cart__item-data">
+                <a class="sc_shopping-cart__item__delete__button" href="#"><img
+                  src="../images/cancel-button.svg"
+                  class="sc_shopping-cart__item__delete__button__img"
+                  alt="Delete button"
+                  onclick="delItem2()"></a>
+              </td>
+              <td class="sc_shopping-cart__item__photo sc_shopping-cart__item-data">
+                <a href="#"><img
+                  src="../images/converse.jpg"
+                  class="sc_shopping-cart__item__photo__img"
+                  alt="Converse shoes picture"></a>
+              </td>
+              <td class="sc_shopping-cart__item__description sc_shopping-cart__item-data">
+                <div class="sc_shopping-cart__item__description__name">
+                  <a href="#" class="sc_shopping-cart__item__description__name__link">
+                  Converse shoes</a>
+                </div>
+                <div class="sc_shopping-cart__item__description__price">
+                  2000 UAH
+                </div>
+              </td>
+              <td class="sc_shopping-cart__item__quantity sc_shopping-cart__item-data">
+                <button class="item-qty-button" type="button" name="subtract button" onclick="subQ2()">-</button>
+                <input disabled type="number" name="quantity" value="1" class="sc_shopping-cart__item__quantity__field" id="qty2">
+                <button class="item-qty-button" type="button" name="add button" onclick="addQ2()">+</button>
+              </td>
+              <td class="sc_shopping-cart__item__sum sc_shopping-cart__item-data">
+                <div class="sc_shopping-cart__item__sum__field" >
+                  <div id="sum2">
+
+                  </div>
+                  <div class="sc_shopping-cart__item__sum__field__currency">
+                    UAH
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <div class="sc_shopping-cart__total">
+          <h2 class="sc_shopping-cart__total__heading">Total:</h2>
+          <div class="sc_shopping-cart__total__field">
+            <span id="total"></span>
+            <div class="sc_shopping-cart__total__field__currency">
+              UAH
+            </div>
+          </div>
+          </div>
+          <div class="sc_shopping-cart__order">
+            <button class="sc_order-button" type="button" name="Order button">Order</button>
+          </div>
 
         </div>
-        <div class="sc_shopping-cart__order">
+      </section>
 
+      <footer class="footer-section sc_footer-section">
+        <div class="footer-section_title">ABOUT US</div>
+        <div class="footer-section_about">
+        <p>This website and all intellectual property located on it belong to
+          their respective owners and are protected by the legislation on
+          intellectual property of Ukraine, as well as relevant international
+          conventions and agreements. Any use of the results of intellectual
+          activity posted on the site (visual design, text, graphics,
+          illustrations, photos, videos, programs, music, marks for goods and
+          services, etc.) without the written permission of the copyright
+          holders is illegal and may serve as a basis for legal proceedings.
+          and bringing the offender to civil and criminal liability in
+          accordance with the current legislation of Ukraine.</p>
+        </div>
+        <div class="footer-section_about">
+          <ul>
+            <li>2019 Copyright Ob.ua</li><br>
+            <li>All rights reserved.</li>
+          </ul>
         </div>
 
-      </div>
-    </section>
+        <div class='social'>
+          <ul class="social-item">
+            <li><a href="https://www.youtube.com/user/JonnaJinton" target="_blank"><i class="fab fa-youtube"></i></a></li><br>
+            <li><a href="https://twitter.com/vkozulya" target="_blank"><i class="fab fa-twitter-square"></i></a></li><br>
+            <li><a href="https://www.instagram.com/zmiyuchkaa/" target="_blank"><i class="fab fa-instagram"></i></a></li><br>
+            <li><a href="https://www.facebook.com/rolskaolena?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a></li><br>
+          </ul>
+        </div>
 
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../js/shopping-cart.js"></script>
   </body>
 </html>
