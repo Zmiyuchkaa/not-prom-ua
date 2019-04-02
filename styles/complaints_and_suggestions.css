@@ -28,7 +28,8 @@ body {
     text-transform: uppercase ;
     letter-spacing: 1em;
     text-shadow: 2px 2px 0 #BDCB96 ;
-    color: black ;    
+    color: black ; 
+    padding: 20px 0 ;   
 }
 
 .navigation {
