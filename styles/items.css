@@ -106,13 +106,14 @@ main {
   display: inline-block;
 }
 
+
 .cart {
-  width: 30px;
-  height: 30px;
-  right: 20px;
-  z-index: 1;
-  padding-top: 12%;
-  float: right;
+    width: 30px ;
+    background-color: white ;
+}
+
+.cart:hover{
+    background-color: #BDCB96 ;
 }
 
 .logo {
